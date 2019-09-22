@@ -1,0 +1,36 @@
+def uses_all(word):
+
+    list = input("Enter the letters : ")
+
+    x = 0
+
+    #new = ""
+    
+    for letter in list:
+
+        for let in word:
+
+            if let == letter:
+  
+                x+=1
+
+                #new=new+letter
+    
+                break
+
+    length = len(list)
+
+    if length == x:
+
+        return True
+
+    else:
+
+        return False
+
+
+print(uses_all("aeaioush"))
+            
+        
+
+
