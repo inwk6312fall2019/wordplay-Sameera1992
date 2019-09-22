@@ -1,0 +1,11 @@
+def avoids(words):
+    forbidden = input("Enter the forbidden letters")
+    for letter in forbidden:
+	for let in word:
+	    if let!=letter:
+		output = True
+	    else:
+		print("false")
+	    if output == True
+		print(word)
+avoids("Sameera")
