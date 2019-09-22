@@ -1,0 +1,8 @@
+def is_abecedarian(word):
+	prev = word[0]
+	for char in word:
+		if char < previous:
+			return False
+		previous = c	
+	return True
+print(is_abecedarian("abcdef")
