@@ -1,0 +1,28 @@
+def uses_only(word):
+
+    list = input("Enter the letters : ")
+
+    x = 0
+
+    new = ""
+
+    for let in word:
+
+        for letter in list:
+
+            if let == letter:
+  
+                new=new+let
+    
+                break
+  
+    if new == word:
+
+        return True
+
+      else:
+
+        return False
+             
+print(uses_only("fal"))
+            
