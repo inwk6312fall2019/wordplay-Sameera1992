@@ -1,0 +1,40 @@
+def consec(word):
+
+    index = 0
+
+    count = 0
+
+    for char in word:
+
+        w1 = word[index]
+
+        w2 = word[index+1]
+
+        #w3 = word[index+2]
+
+        if word[index] == word[index+1]:
+
+            count+=1
+
+            index+=1
+
+        else:
+
+           count = 0
+
+        index+=1
+
+        if index == len(word):
+
+            break
+
+        
+    if count == 3:
+
+        return True
+
+    else:
+
+        return False
+
+print(consec("Commttee")  )
