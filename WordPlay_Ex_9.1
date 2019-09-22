@@ -1,0 +1,7 @@
+def read_file():
+    my_file = open("words.txt")
+    for line in my_file:
+        word = line.strip()
+        if len(word) > 20:
+            print(word)
+read_file()
