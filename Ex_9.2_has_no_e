@@ -1,0 +1,27 @@
+def has_no_e():
+    my_file = open("words.txt")
+    for line in word:
+        word = line.strip()
+        for letter in word:
+             if letter != "e":
+             x = 0
+            else:
+                x = 1
+                break
+            if x == 0:
+                print (word)
+                return True
+            else:
+                return False
+def avg():
+    my_file = open("words.txt")
+    count = 0
+    new_file = my_file.strip()
+    n = len(new_file)
+    for index in new_file:
+        output = has_no_e(index)
+        if output == True:
+           count = count+1
+    avg = count/n
+    print("Avg no. of words that has no 'e' is :" +str(avg))
+avg()
